@@ -55,8 +55,7 @@
   Bundle "MarcWeber/vim-addon-mw-utils"
   Bundle "tomtom/tlib_vim"
   Bundle "MarcWeber/ultisnips"
-  "Bundle "garbas/vim-snipmate"
-  Bundle "honza/snipmate-snippets"
+  Bundle "stonelee/vim-snippets"
 
   " html
   Bundle 'mattn/zencoding-vim'
