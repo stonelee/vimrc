@@ -185,16 +185,13 @@
 " }
 
 " 插件设置 {
+
+  "快速打开.vimrc
   if has('win32') || has('win64')
-    "TODO
-    "快速打开.vimrc
-    "本文件位于C:\Users\lxd\vimrc中,使用github管理
-    "C:\Users\lxd\_vimrc中引用该文件即可 source ~/vimrc/vimrc
-    "nmap <leader>ee :edit ~/vimrc/vimrc<cr>
+    nmap <leader>ee :edit ~/vimrc/vimrc<cr>
     autocmd! bufwritepost .vimrc source ~/_vimrc "自动更新
   else
-    "linux下ln ~/vimrc/vimrc ~/.vimrc
-    nmap <leader>ee :edit ~/vimrc/vimrc<cr>
+    nmap <leader>ee :edit ~/.vimrc<cr>
     autocmd! bufwritepost vimrc source ~/.vimrc "自动更新
   endif
 
