@@ -88,6 +88,9 @@
   "markdown
   Bundle 'plasticboy/vim-markdown'
 
+  "handlebars
+  Bundle 'nono/vim-handlebars'
+
   filetype plugin indent on
 " }
 
@@ -243,6 +246,12 @@
     "max_char = 78
     "brace_style = expand
   "}
+
+  " vim-handlebars {
+    "将扩展名为tpl的文件的filetype识别为handlebars
+    au BufRead,BufNewFile * if &ft == 'smarty' | set ft=handlebars | endif
+  "}
+
 " }
 
 " function {
