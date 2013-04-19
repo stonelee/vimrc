@@ -104,7 +104,11 @@
 
   set guifont=Consolas:h13 " 字体
   set cursorline           " 高亮鼠标当前行
-  set relativenumber       " 显示相对行号
+  if v:version>702
+    set relativenumber     " 显示相对行号
+  else
+    set number             " 显示行号
+  endif
 
   set incsearch            " 输入搜索词时实时自动寻找
   set hlsearch             " 高亮搜索的词
