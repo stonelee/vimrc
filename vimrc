@@ -90,6 +90,11 @@
   "handlebars
   Bundle 'nono/vim-handlebars'
 
+  "less
+  Bundle 'groenewege/vim-less'
+  "scss
+  Bundle 'cakebaker/scss-syntax.vim'
+
   filetype plugin indent on
 " }
 
@@ -185,6 +190,8 @@
   " 向上搜索
   vmap <silent> <leader>F y?<c-r>=escape(@", '\\/.*$^~[]')<cr><cr>
 
+  " 删除所有行末尾空格
+  nmap <F12> :%s/[ \t\r]\+$//g<CR>
 " }
 
 " 插件设置 {
