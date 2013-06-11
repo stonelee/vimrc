@@ -192,6 +192,12 @@
 
   " 删除所有行末尾空格
   nmap <F12> :%s/[ \t\r]\+$//g<CR>
+
+  " w!!使用sudo保存文件
+  cmap w!! w !sudo tee %
+
+  " json -> js
+  autocmd BufRead,BufNewFile *.json set filetype=javascript
 " }
 
 " 插件设置 {
