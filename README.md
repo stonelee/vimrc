@@ -12,7 +12,7 @@
 
 ### windows
 
-建立新文件C:\Users\username\_vimrc，内容为
+建立新文件_vimrc，内容为
 
 ```
   source ~/vimrc/vimrc
