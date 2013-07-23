@@ -96,6 +96,9 @@
   "scss
   Bundle 'cakebaker/scss-syntax.vim'
 
+  " tag
+  Bundle 'majutsushi/tagbar'
+
   filetype plugin indent on
 " }
 
@@ -199,6 +202,14 @@
 
   " json -> js
   autocmd BufRead,BufNewFile *.json set filetype=javascript
+
+  " drupal
+  autocmd BufRead,BufNewFile *.module set filetype=php
+  autocmd BufRead,BufNewFile *.install set filetype=php
+  autocmd BufRead,BufNewFile *.test set filetype=php
+  autocmd BufRead,BufNewFile *.inc set filetype=php
+  autocmd BufRead,BufNewFile *.profile set filetype=php
+  autocmd BufRead,BufNewFile *.view set filetype=php
 " }
 
 " 插件设置 {
@@ -264,6 +275,10 @@
   " vim-handlebars {
     "将扩展名为tpl的文件的filetype识别为handlebars
     au BufRead,BufNewFile * if &ft == 'smarty' | set ft=handlebars | endif
+  "}
+
+  " tabbar {
+    nmap <F8> :TagbarToggle<CR>
   "}
 
 " }
