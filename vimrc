@@ -42,13 +42,14 @@
   "ctrl+p
   Bundle 'kien/ctrlp.vim'
 
-  if executable('ack')
+  "if executable('ack')
     "通过内容查找,需要安装ack
     "Ack content
     Bundle 'mileszs/ack.vim'
-  endif
+  "endif
 
   " git集成
+  ":Gst查看状态 c-n移动到下一个文件 -切换提交与否 cc提交 ca提交到上一次
   Bundle 'tpope/vim-fugitive'
 
   " 代码片段
