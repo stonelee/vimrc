@@ -164,6 +164,10 @@
 
   "折叠
   nmap <space> za
+  "zO打开本区域所有嵌套折叠
+  "zR打开所有嵌套折叠
+  "zM折叠所有嵌套
+  nmap <F7> :set foldmethod=indent<CR>
 
   "跳转
   nmap <tab> %
@@ -279,6 +283,12 @@
 
   " tabbar {
     nmap <F8> :TagbarToggle<CR>
+  "}
+
+  " zencoding {
+  let g:user_zen_settings = {
+    \ 'lang': "zh-CN",
+    \ }
   "}
 
 " }
