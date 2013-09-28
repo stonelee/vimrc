@@ -85,6 +85,9 @@
 
   " 美化js,html,css代码
   Bundle 'maksimr/vim-jsbeautify'
+  " 配置代码格式
+  Bundle 'editorconfig/editorconfig-vim'
+
   "markdown
   Bundle 'plasticboy/vim-markdown'
 
