@@ -102,6 +102,8 @@
   " tag
   Bundle 'majutsushi/tagbar'
 
+  Bundle 'digitaltoad/vim-jade'
+
   filetype plugin indent on
 " }
 
@@ -136,6 +138,7 @@
   set shiftwidth=2               " 缩进[>]宽度
 
   set nowrap                     " 不自动换行
+  set noswapfile                 " 不使用swap，没什么用处，还会导致许多watcher监测失败
 
   set backspace=indent,eol,start " 不设定在插入状态无法用退格键和 Delete 键删除回车符
 
