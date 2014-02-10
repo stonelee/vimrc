@@ -210,6 +210,9 @@
   " w!!使用sudo保存文件
   cmap w!! w !sudo tee %
 
+  " 切到之前的buffer
+  nmap <leader>bb :b#<cr>
+
   " json -> js
   autocmd BufRead,BufNewFile *.json set filetype=javascript
 
