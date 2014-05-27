@@ -59,7 +59,7 @@
   Bundle "stonelee/vim-snippets"
 
   " html
-  Bundle 'mattn/zencoding-vim'
+  Bundle 'mattn/emmet-vim'
 
   " 注释
   Bundle 'scrooloose/nerdcommenter'
@@ -116,7 +116,12 @@
   "set encoding=utf-8                       "设置vim以何种编码显示文件.如果设置会导致window下中文菜单和提示乱码
   "set fileencoding=utf-8                   "保存时使用,可以使用这个命令更改文件格式
 
-  set guifont=Consolas:h13 " 字体
+  if has('win32') || has('win64')
+    set guifont=Consolas:h11 " 字体
+  else
+    set guifont=Consolas:h13 " 字体
+  endif
+
   set cursorline           " 高亮鼠标当前行
   if v:version>702
     set relativenumber     " 显示相对行号
